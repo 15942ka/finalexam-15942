@@ -1,0 +1,22 @@
+{
+  "name": "json",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/week10-15942.git"
+  },
+  "engines": {
+    "nde": "5.6.0"
+  },
+  "scripts": {
+    "start": "node server.js 8000"
+  },
+  "main": "server.js",
+  "author": "Ajaykumar Kondragunta",
+  "license": "ISC",
+  "description": "sample json",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ws": "^1.1.1"
+  }
+}

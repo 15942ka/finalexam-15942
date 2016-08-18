@@ -3,44 +3,48 @@ var url = require('url')
 
 var port = process.env.PORT || Number(process.argv[2]);
 var Course_id = {
-  cs551: {
-    	"cs551": [
+  11111: {
+    	"11111": [
 
         {
         
-          "Score": 22,
-          "HomeworkID":1
-        },
-        {
-         
-          "Score": 33,
-          "HomeworkID":1
-        },
-        {  
-          "Score": "44",
-          "HomeworkID":200
-        }
+          "Student Name":Bruce Lee
+	"Score": 84,
+       
+	 }
+     
+      
       ]
   },
-  cs557: {
-    "cs557": [
-      {
-      
-        "Score": 11,
-        "HomeworkID":1
-      },
-      {
+22222: {
+    	"22222": [
+
+        {
+        
+          "Student Name":Jackie Chen
+	"Score": 93,
        
-        "Score": 4444,
-        "HomeworkID":1
-      }
-    ]
+	 }
+     
+      
+      ]
+  },
+
+33333: {
+    	"33333": [
+
+        {
+        
+          "Student Name":Jet Li
+	"Score": 88,
+       
+	 }
+     
+      
+      ]
   }
-}
-
-
 function parsetime(cid) {
-  return Course_id[cid];
+  return Student_id[cid];
 }
 
 var server = http.createServer(function (req, res) {
